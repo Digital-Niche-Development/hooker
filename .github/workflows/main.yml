@@ -2,7 +2,7 @@ name: build mkdocs
 on:
   push:
     branches:
-      - master
+      - brothel
 jobs:
   build-mkdocs:
     runs-on: ubuntu-latest
@@ -15,5 +15,5 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
         env:
            REQUIREMENTS: requirements.txt
-           CUSTOM_DOMAIN: docs.webhook.site
+           CUSTOM_DOMAIN: docs.hooker.dev
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
